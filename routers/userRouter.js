@@ -4,9 +4,6 @@ import { users, userDetail, editProfile, changePassword } from "../controllers/u
 
 export const userRouter = express.Router();             //변수만 export
 
-userRouter.get(routes.users, users);
-userRouter.get(routes.userDetail, userDetail);
 userRouter.get(routes.editProfile, editProfile);
 userRouter.get(routes.changePassword, changePassword);
-
-
+userRouter.get(routes.userDetail, userDetail);
